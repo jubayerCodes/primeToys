@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+:root {
+  --btn-bg-color: #4acdd5;
+  --btn-bg-color2: #FF6799;
+}
+
+.my-container {
+  @apply lg:w-[1200px] mx-auto
+}
+
+.login-btn {
+  @apply btn px-10 bg-[var(--btn-bg-color)] border-[var(--btn-bg-color)] hover:bg-[var(--btn-bg-color2)] hover:border-[var(--btn-bg-color2)] rounded-full font-bold py-4;
+  line-height: 1.2;
+}
+
+.tab-btn {
+  @apply hover:bg-[var(--btn-bg-color2)] hover:border-[var(--btn-bg-color2)] rounded-full font-bold py-4;
+  line-height: 1.2;
+}
+
+.banner-btn{
+  @apply btn px-10 bg-[var(--btn-bg-color)] border-[var(--btn-bg-color)] hover:bg-[var(--btn-bg-color2)] hover:border-[var(--btn-bg-color2)] rounded-full font-bold py-4;
+  line-height: 1.2;
+}
+
+.menu-item {
+  @apply text-lg font-semibold hover:bg-white hover:text-[var(--btn-bg-color2)] duration-300
+}
+
+.active-link {
+  @apply bg-white text-[var(--btn-bg-color2)]
+}
+
+.section-title {
+  @apply text-4xl font-semibold capitalize
+}
+
+.section-desc {
+  @apply text-[#666]
+}
+
+.mini-title{
+  @apply text-lg capitalize mt-2 text-[var(--btn-bg-color2)]
+}
+
+.current-page{
+  @apply bg-[var(--btn-bg-color)] text-black hover:bg-[var(--btn-bg-color)]
+}
