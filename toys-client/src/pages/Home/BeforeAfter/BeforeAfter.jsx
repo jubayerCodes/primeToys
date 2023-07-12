@@ -27,7 +27,7 @@ const BeforeAfter = () => {
                     before={before}
                     after={after}
                     width={width}
-                    height={480}
+                    height={660}
                 />
             </div>
         </section>
